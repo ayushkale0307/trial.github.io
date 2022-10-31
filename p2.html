@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        background-image: url('https://www.athletadesk.com/wp-content/uploads/2016/08/join-background.jpg');
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: rgb(215, 144, 218);
+        font-weight: bold;
+        font-stretch: extra-expanded;
+    }
+
+    h1{
+        align-items: center;
+        background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-line-high-tech-electricity-image_430309.jpg');
+        color: rgb(195, 127, 209);
+        font-size: 35px;
+        height: 25px;
+        text-align: center;
+        padding: 25px;
+        font-weight: bold;
+        font-stretch: expanded;
+        letter-spacing: 3px;
+        
+    
+    }
+
+    input [type=text]:hover{
+        border-color: black;
+        
+    
+    }
+
+   
+   
+
+    /* .loginpanel span input.btn_sp:hover {
+        border: #375a90 2px solid;
+        color: #375a90;
+        background-color: #FFFFFF;
+    }
+
+    .loginpanel span input.btn_sp {
+        font-size: 18px;
+        cursor: pointer;
+        padding-right: 15px;
+        text-align: right;
+
+    }
+
+    .clear {
+        background: transparent url(../../images/icons/cancel.png) no-repeat 3px center;
+    } */
+
+    strong #imp {
+        color: red;
+        size: 2px;
+    }
+
+    /* input {
+        padding: 3.5px;
+        margin-left: 37px;
+        background-color: rgb(231, 206, 255);
+        border-radius: 5px;
+    } */
+
+    input[type=text] {
+        width: 100px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-out;
+      }
+      input[type=text]:focus {
+        width: 150px;
+        background-color: #eee;
+        
+      }
+    input[type=email] {
+        width: 150px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-out;
+      }
+      input[type=email]:focus {
+        width: 175px;
+        background-color: #eee;
+      }
+    input[type=tel] {
+        width: 125px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-out;
+      }
+      input[type=tel]:focus {
+        width: 170px;
+        background-color: #eee;
+      }
+
+      textarea{
+            width: 125px;
+            height: 150px;
+        -webkit-transition: width .2s ease-in-out;
+        -moz-transition: width .2s ease-out;
+        -o-transition: width .2s ease-in-out;
+        transition: width .2s ease-out;
+      }
+      textarea:focus{
+            width: 200px;
+            height: 200px;
+        background-color: #eee;
+      }
+
+      input[type="radio"]:indeterminate + label {
+        color: #a57762;
+      }
+    
+
+    form {
+        text-align: inherit;
+    }
+
+    #button:hover {
+        background-color: rgb(74, 36, 117);
+        color: rgb(235, 232, 241);
+    }
+
+    #button_2:hover {
+        background-color: rgb(74, 36, 117);
+        color: rgb(235, 232, 241);
+    }
+
+    p {
+        /* font-size: 30px; */
+        color: rgb(237, 203, 241);
+        background-image: url('https://www.aizul.xyz/img/background.jpg');
+        left: 60%;
+        display: contents;
+    }
+
+    .footer {
+        background-color: rgb(97, 8, 119);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        justify-content: center;
+        color: #25c4e4;
+        margin: -6px -100px;
+        display: inline list-item;
+    }
+</style>
+
+<body>
+
+    <h1>REGISTRATION FORM</h1><br>
+
+
+    <form action="/action_page.php" style="padding: 0%;margin: -2px;padding-inline: 94px">
+        <label for="Name"><strong style="margin-right: 0%;">Name:<strong id="imp">*</strong></label>
+        <strong style="margin-left: -14px; padding-right: 20px;">
+            <input type="text"id="text_1" placeholder="Enter first Name">
+            <input type="text" id="text_2"placeholder="Enter last Name">
+        </strong><br><br>
+        <label for="Department Name"><strong>Department Name :<strong id="imp">*</strong></label>
+        <select style="background-color: rgb(231, 206, 255);" name="Department Nmae " id="Dept">
+            <table>
+                <option value="val_1">Computer technology </option>
+                <option value="val_1">Computer Science </option>
+                <option value="val_1">Mechanical </option>
+                <option value="val_1">Civil </option>
+                <option value="val_1">Information technology</option>
+                <option value="val_1">Electonics</option>
+                <option value="val_1">E & TC</option>
+                <option value="val_1">other</option>
+            </table>
+        </select><br><br>
+
+        <label for="Current Year"><strong>Current Year :<strong id="imp">*</strong></label>
+        <input type="number" id="Year" name="Current Year" min="1" max="4" placeholder="Enter current Year">
+        <br><br>
+        <label for="Email"><strong>Email Id :<strong id="imp">*</strong></label>
+        <input type="email" placeholder="ex. xyz@gmial.com">
+        <br><br>
+        <label for="Phone No "><strong>Phone No :<strong id="imp">*</strong></label>
+        <input type="tel" maxlength="10" placeholder="Enter your phone no."><br><br>
+
+
+        <label for="Gender"><strong>Gender :<strong id="imp">*</strong></label>
+        <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label>
+        <br><br>
+
+        <label for="DOB"><strong>DOB :<strong id="imp">*</strong></label>
+        <input type="date" placeholder="Enter your DOB"><br><br>
+
+
+        <label for="DOB"><strong>Date of event :<strong id="imp">*</strong></label>
+        <input type="date"><br><br>
+
+
+        <label for="Time of event"><strong>Time of Event :<strong id="imp">*</strong></label>
+        <input type="time">
+        <label for="to"><strong style="padding-left: 48px;">To </strong></label>
+        <input type="time"><br><br>
+
+        <label for="No. of person"><strong>No. of persons :<strong id="imp">*</strong></label>
+        <input type="tel" maxlength="5">
+        <label for="persons" style="color:rgb(239, 236, 241); font: size 5px; padding-left: 20px;">(limit upto 99999
+            Seats)</label>
+        <br><br>
+        <label for="Media "><strong>Media Required :<stron id="imp">*</strong></label>
+        <input type="radio" id="Media Required" name="Media" value="yes">
+          <label for="Media">Yes</label>
+        <input type="radio" id="Media Required" name="Media" value="NO">
+          <label for="Media">No</label>
+        <br><br>
+
+        <label for="Sound System"><strong>Sound System Required :<strong id="imp">*</strong></label>
+        <input type="radio" id="Sound Required" name="Sound System" value="Yes">
+          <label for="Sound">Yes</label>
+        <input type="radio" id="Sound Required" name="Sound System" value="No">
+          <label for="Sound">No</label>
+        <br><br>
+
+        <label for="Meal Required"><strong>Food Required :<strong id="imp">*</strong></label>
+        <input type="radio" id="Food Required" name="Food Requirement" value="Yes">
+          <label for="Food">Yes</label>
+        <input type="radio" id="Food Required" name="Food Requirement" value="No">
+          <label for="Food">No</label>
+        <br><br>
+
+        <div>
+            <label for="Address"><strong>Address:<strong id="imp">*</strong></lab>
+        </div>
+
+        <textarea style="background-color: rgb(231, 206, 255);" name="Address" id="Add." cols="30" rows="7"></textarea>
+        <br><br>
+        <input id="button" type="SUBMIT">
+        <input id="button_2" type="RESET"><br><br>
+
+        <!-- <input type="submit" name="btnReset" value="Clear" id="btnReset" class="btn_sp clear"
+            style="height: 45px; width: 90px;"> -->
+
+
+    </form>
+
+    <footer class="footer">
+        <section class="box" id="box1">
+            <p>
+                ADDRESS:PLOT NO 230,LASKMI COMPLEX ,BHENDE LAYOUT RAMNAGAR,NAGPUR-441190.
+                <br>
+                PHONE NUMBER : +91-423045223.
+                <br>
+                EMAIL : bacjf@gmail.com
+                <br>
+                TIMING : 10AM ~ 5PM.
+            </p>
+        </section>
+        <section class="box" id="box2">
+            <p>
+                FOR MORE DETAILS:<BR>
+                CONTACT NUMBERS-
+                9667754467<BR>996553356<BR>6679333679
+
+            </p>
+        </section>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    h2::first-letter {
+        font-size: 100px;
+        color: rgb(216, 70, 34);
+        display: flex;
+        padding-top: 100px;
+
+    }
+
+    #example {
+        width: 100%
+    }
+
+    h2 {
+        font-size: 55px;
+        color: #6a4646;
+        margin: -5px;
+        animation: glitch1 0.5s infinite;
+
+    }
+
+    @keyframes glitch1 {
+        0% {
+            transform: none;
+            opacity: 1;
+        }
+
+        50% {
+            transform: skew(-2deg, 0.6deg);
+            opacity: 0.75;
+        }
+
+        100% {
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+</style>
+
+<body>
+
+    <div style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKrvsm3c5095u4OuaDFyT6cXSEHqXcyos5IA&usqp=CAU');
+background-size: cover; height:430px; text-align: start;">
+        
+        <h2>Gallary</h2>
+
+    </div>
+
+</body>
+
+</html>
