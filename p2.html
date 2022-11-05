@@ -30,6 +30,35 @@
         
     
     }
+    header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+header h1 {
+    position: absolute;
+    width: 90%;
+    font-size: 47px;
+    font-weight: 550;
+    color: transparent;
+    background-image: linear-gradient(to right ,#ba6cee, #3696e9, #3acde3, #2c78d6, #d02de1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200%;
+    background-position: -200%;
+    transition: all ease-in-out 2.5s;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+header h1:hover{
+  background-position: 200%;
+}
+
 
    
    
@@ -152,10 +181,9 @@
 </style>
 
 <body>
-
+<header>
     <h1>REGISTRATION FORM</h1><br>
-
-
+</header>
     <form action="/action_page.php" style="padding: 0%;margin: -2px;padding-inline: 94px">
         <label for="Name"><strong style="margin-right: 0%;">Name:<strong id="imp">*</strong></label>
         <strong style="margin-left: -14px; padding-right: 20px;">
